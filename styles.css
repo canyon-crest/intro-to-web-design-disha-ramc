@@ -6,7 +6,7 @@ body{
 }
 
 #container{
-    background-color: rgb(245, 206, 206);
+    background-color: rgb(246, 218, 218);
     padding: 30px;
     width: 1000px;
     margin: 0 auto;
@@ -30,7 +30,7 @@ body{
 
 p{
     line-height: 2.25em;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     
 }
 h1{
@@ -41,8 +41,9 @@ h1{
 
 h2{
     color: rgb(234, 209, 212);
+    border-radius:30px;
     text-align: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Courier New', Courier, monospace;
     background-color: rgb(89, 69, 69);
     padding: 15px;
     width: 400px;
@@ -70,9 +71,10 @@ img{
 }
 
 .highlight{
-    background: rgb(247, 224, 224);
+    background: rgb(248, 231, 231);
     padding: 4px;
     border-radius: 5px;
+    font-weight:bold;
 }
 
 .bold{
@@ -97,26 +99,49 @@ a:hover{
 
 @media (max-width:1200px){
     #container{
-        width: 800px;
+        width: 875px;
     }
 }
 
-@media (mad-width:992px){
+@media (max-width:992px){
+    body{
+        background-color: rgb(206, 183, 179);
+        padding:10px;
+
+    }
     #container{
-        width: 100%;
-        margin:0;
-        padding: 0;
+        background-color:rgb(246, 218, 218);
+        width: 90%;
         border:none;
 
     }
-    body{
-        padding:20px;
-        background-color: #333
+    #sidebar{
+        width:80%;
+        margin:0 auto;
+        float:none;
+    }
+    h1{
+        width:70%;
+    }
+    p{
+        text-align:justify;
     }
 }
 
 @media (max-width:768px){
+    #container, body{
+        background-color:rgb(246, 218, 218);
+        margin:0 auto;
+        padding:4px;
+
+    }
     #sidebar{
         display:none;
+    }
+    img, #pic2{
+        float:none;
+        width:95%;
+        margin:0 auto;
+        padding:10px;
     }
 }
